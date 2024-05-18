@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikipedia Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Wikipedia Viewer</h1>
+    <input type="text" id="search-box" placeholder="Search Wikipedia..." oninput="showSuggestions(this.value)">
+    <div id="suggestions"></div>
+    <div class="button-container">
+      <button id="search-btn">Search</button>
+      <button id="random-btn">Random Article</button>
+    </div>
+    <div id="loading" style="display: none;">Loading...</div>
+    <div id="results"></div>
+    <div id="pagination"></div>
+    <div class="theme-toggle">
+      <button id="toggle-theme">Toggle Theme</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
